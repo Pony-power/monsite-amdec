@@ -1,0 +1,17 @@
+{% extends 'pages/base.html' %}
+
+{% block title %}Accueil - Mon Site{% endblock %}
+
+{% block content %}
+    {% if home_page %}
+        <h1>{{ home_page.title }}</h1>
+        <div class="content">
+            {{ home_page.content|linebreaks }}
+        </div>
+    {% else %}
+        <div class="home-hero">
+            <h1>Bienvenue sur mon site ! 🎉</h1>
+            <p>Créez une page avec le slug "accueil" dans l'admin pour personnaliser cette page.</p>
+        </div>
+    {% endif %}
+{% endblock %}

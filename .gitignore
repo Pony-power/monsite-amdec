@@ -1,0 +1,14 @@
+# SECRETS
+.env
+.env*
+*.key
+*.token
+
+# Python
+__pycache__/
+*.pyc
+venv/
+
+# Django
+db.sqlite3
+media/
